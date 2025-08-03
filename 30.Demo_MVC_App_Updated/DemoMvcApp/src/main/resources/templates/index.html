@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Demo MVC Updated</title>
+</head>
+<body>
+	<h1 th:text="${appName}"></h1>
+	
+    <p th:if="${devName!=null}" style='background-color:yellow; padding:10px;' >
+    	Developer Name: <span th:text="${devName}"></span>
+    </p>
+    <p th:unless="${devName!=null}" style='background-color:yellow; padding:10px;' >
+    	Developer Name: INCAPP
+    </p>
+	<hr>
+	<p th:text="${session.cname}"></p>
+	<hr>
+	<a href="page1">Page 1</a>
+	<hr>
+	<p>This is Welcome Page</p>
+	<form action="add" method="post">
+		<label>1st No:</label>
+		<input type="number" name="num1" required />
+		<br><br>
+		<label>2nd No:</label>
+		<input type="number" name="num2" required />
+		<br><br>
+		<button>Add</button>
+	</form>
+	<hr>
+	
+	<form action="sub" method="post">
+		<label>1st No:</label>
+		<input type="number" name="num1" required />
+		<br><br>
+		<label>2nd No:</label>
+		<input type="number" name="num2" required />
+		<br><br>
+		<button>Subtract</button>
+	</form>
+</body>
+</html>

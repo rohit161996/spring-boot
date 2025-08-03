@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Demo MVC Updated</title>
+</head>
+<body>
+	<h1 th:text="${appName}"></h1>
+	<hr>
+	<a href="/">Home</a>
+	<hr>
+	<p th:text="${session.c2}"></p>
+	<p th:text="${c1}"></p>
+	<hr>
+	<p>This is Page 1</p>
+	<p th:if="${#lists.isEmpty(dat)}">
+		List is Empty!
+	</p>
+	<div th:each="a : ${data}">
+		<p th:text="${a}"></p>
+	</div>
+</body>
+</html>
