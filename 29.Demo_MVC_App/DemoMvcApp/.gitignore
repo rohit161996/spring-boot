@@ -1,0 +1,45 @@
+# === Build outputs ===
+/target/
+/build/
+
+# === Maven wrapper JAR (optional to ignore) ===
+.mvn/wrapper/maven-wrapper.jar
+
+# === IDEs ===
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# === OS-generated files ===
+.DS_Store
+Thumbs.db
+
+# === Logs & temp files ===
+*.log
+*.tmp
+*.bak
+
+# === Misc ===
+HELP.md
