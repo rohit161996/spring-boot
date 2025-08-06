@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Print Books</title>
+<style type="text/css">
+	div{
+		background-color:yellow; 
+		padding:20px; 
+		margin:5px; 
+		box-shadow:2px 2px 5px #6bbdff; 
+		border-radius:10px; 
+		width:max-content;
+	}
+</style>
+</head>
+<body>
+	<h1>Incapp Book App</h1>
+	<hr>
+	<a href='/'>Home</a>
+	&nbsp;&nbsp;&nbsp;
+	<a href='admin-login'>Login</a>
+	<hr>
+	<h2>Book Details</h2>
+	
+	<div>
+		<p>Name: <b th:text="${book.name}"></b> </p>
+		<p>Author Name: <b th:text="${book.aname}"></b> </p>
+		<a href="">View More</a>
+		<br/><br/>
+		<form action='' method='post'>
+			<input type='hidden' name='bname' value=''>
+			<button>View More</button>
+		</form>
+	</div>
+	
+</body>
+</html>

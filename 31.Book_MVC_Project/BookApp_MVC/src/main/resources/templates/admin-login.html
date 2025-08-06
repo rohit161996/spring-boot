@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login Page</title>
+<style type="text/css">
+	#msg{
+		background-color: yellow;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+	<h1>Incapp Book App</h1>
+	<hr>
+	<a href='/'>Home</a>
+	&nbsp;&nbsp;&nbsp;
+	<a href='admin-login'>Login</a>
+	<hr>
+	<h2>Admin Login</h2>
+	
+	<div th:if="${msg!=null}">
+		<p id="msg" th:text="${msg}"></p>
+	</div>
+	
+	<form action="AdminLogin" method="post">
+		<label>Id:</label>
+		<input type="text" name="id" required />
+		<br><br>
+		<label>Password:</label>
+		<input type="password" name="password" required />
+		<br><br>
+		<button>Login</button>
+	</form>
+</body>
+</html>
