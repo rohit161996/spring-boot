@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		background-color:yellow; 
+		padding:20px; 
+		margin:5px; 
+		box-shadow:2px 2px 5px #6bbdff; 
+		border-radius:10px; 
+		width:max-content;
+	}
+</style>
+</head>
+<body>
+	<h1>Incapp Book App</h1>
+	<hr>
+	<p>
+		Welcome <b th:text="${session.name}"></b> 
+		<a href='AdminHome'>Home</a> 
+		<a href='AllBooks'>All Books</a>  
+		<a href='Logout'>Logout</a> 
+	</p>
+	<hr>
+	<h2>Book Details</h2>
+	
+	<div th:each="book : ${books}">
+		<p>Name: <b th:text="${book.name}"></b> </p>
+		<p>Author Name: <b th:text="${book.aname}"></b> </p>
+		<p>Publisher Name: <b th:text="${book.pname}"></b> </p>
+		<p>Price: <b th:text="${book.price}"></b> </p>
+		<br/>
+		<form action='DeleteBook' method='post'>
+			<input type='hidden' name='bname' th:value='${book.name}'>
+			<button>Delete Book</button>
+		</form>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		background-color:green; 
+		color:white; 
+		padding:20px; 
+		margin:5px; 
+		box-shadow:2px 2px 5px #6bbdff; 
+		border-radius:10px; 
+		width:max-content;
+	}
+</style>
+</head>
+<body>
+	<h1>Incapp Book App</h1>
+	<hr>
+	<a href='/'>Home</a>
+	&nbsp;&nbsp;&nbsp;
+	<a href='admin-login'>Login</a>
+	<hr>
+	<h2>Book Details</h2>
+	
+	<div>
+		<p>Name: <b th:text="${book.name}"></b> </p>
+		<p>Author Name: <b th:text="${book.aname}"></b> </p>
+		<p>Publisher Name: <b th:text="${book.pname}"></b> </p>
+		<p>Price: <b th:text="${book.price}"></b> </p>
+	</div>
+	
+</body>
+</html>

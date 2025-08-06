@@ -38,25 +38,25 @@ BookApp_MVC
 │   │   │       |
 │   │   │       |
 │   │   │       |
-│   │   │       ├── entities (MODEL)
+│   │   │       ├── entities (MODEL) ✅
 │   │   │       │   ├── Book.java (TABLE 1)
 │   │   │       │   └── Login.java (TABLE 2)
 │   │   │       |
 │   │   │       |
-│   │   │       └── repo (Layer -> DATABASE CONNECTIONS)
+│   │   │       └── repo (Layer -> DATABASE CONNECTIONS) ✅
 │   │   │           └── MyRepo.java
 │   │   |
 │   │   |
 │   │   └── resources
 │   │       ├── static
 │   │       |
-│   │       ├── templates
+│   │       ├── templates ✅
 │   │       │   ├── AdminHome.html
 │   │       │   ├── admin-login.html
 │   │       │   ├── index.html
 │   │       │   └── PrintBooks.html
 │   │       |
-│   │       └── application.properties (CONFIGURATIONS)
+│   │       └── application.properties (CONFIGURATIONS) ✅
 │   └── test
 │       └── java
 │
